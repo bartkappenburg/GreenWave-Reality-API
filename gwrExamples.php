@@ -14,13 +14,13 @@ $gwr = new GWR($config);
 # This example gets your account details. The output will be a JSON (default) file.
 
 # specify options (see methods.txt for the options per method)
-$options = array('period' => 'day', "feed" => 'data', "datatype" => 'el');
+$options = '' # this method has no options
 
 # usage: $gwr->getData("method", $options, $output = "json|array")
-$account = $gwr->getData("AccountGetDetails", $options);
+$account = $gwr->getData("AccountGetDetails");
 
 #uncomment to see output
-print_r($account);
+//print_r($account);
 
 ##############################################################################
 

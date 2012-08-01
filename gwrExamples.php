@@ -19,7 +19,7 @@ $options = '' # this method has no options
 # usage: $gwr->getData("method", $options, $output = "json|array")
 $account = $gwr->getData("AccountGetDetails");
 
-#uncomment to see output
+#uncomment to see the output
 //print_r($account);
 
 ##############################################################################
@@ -34,7 +34,7 @@ $options = array('period' => 'day', "feed" => 'data, avg', "datatype" => 'el');
 # usage: $gwr->getData('method', $options, $output = "json|array")
 $usage = $gwr->getData("UserGetchart", $options);
 
-#uncomment to see output
+#uncomment to see the output
 //print_r($usage);
 
 ##############################################################################

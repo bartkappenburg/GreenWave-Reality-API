@@ -1,0 +1,127 @@
+This file specifies which methods you can use to extract data from your smart meter.
+The options have to be defined as an array with a key (option name) and value (option value).
+
+#################################################################################
+GatewayGetInfo 			(info on your gateway)
+	Options:
+	
+	No options
+#################################################################################
+AccountGetDetails 		(details on your account)
+	Options:
+	
+	No options	
+#################################################################################
+RoomGetCarousel			(details on defined rooms)
+	Options:
+	
+	No options	
+#################################################################################
+UserUtilityGet 			(info on the vendor)
+	Options:
+	
+	No options	
+#################################################################################
+AccountGetPreferences 	(info on your preferences)
+	Options:
+	
+	No options	
+#################################################################################
+UserThermostatGetData 	(data on your thermostat)
+	Options:
+	
+	No options	
+#################################################################################
+UserGetWeather			(get data on the local weather)
+	Options:
+	
+	No Options	
+#################################################################################
+UserGetchart 			(data points on electricity/gas usage with a couple of options)
+	Options:
+	
+	period 		= (now,day,week,month,quarter,year)
+	feed 		= "data,avg,alert,energyperhour,costperhour,tempout" (also singular or combinations, use commas)
+	datatype 	= "el" or "gas"
+#################################################################################
+AccountMessageGet 		(messages in your account)
+	Options: 
+	
+	type 		= web (no clue what the other options are)
+	summary 	= 1 or 0
+	count 		= int (e.g. 100)
+#################################################################################
+UserEnergyExplorer		(data on your energy)
+	Options:
+	
+	id 			= 0 (always 0?)
+	what 		= curpower (=current power), energy (=total used energy)
+	type 		= houseall (no clue on other options)
+	period		= now,day,week,month,quarter,year
+	datatype   	= "el" or "gas"
+	cost		= 0,1 (give cost)
+	co2			= 0,1 (give C02 output)
+	goal		= 0,1 (display goal)
+	prognosis	= 0,1 (display prognosis)
+	elabel		= 0,1 (display energy label)
+	regionsimilar = 0,1 (show for region)
+	fd			= e.g. "20120801000000" (from date, example is August 1st 2012 00:00:00)
+	td			= e.g. "20120831235959" (to date, example is August 31st 2012 23:59:59)
+	prev		= 0,1 (show previous period)
+#################################################################################
+UserCheckSmartMeter		(check your SmartMeter)
+	Options:
+	
+	datatype	= "el" or "gas"
+#################################################################################
+UserGetChartCompareByRoom (compare the defined rooms (if any))
+	Options:
+	
+	period		= now,day,week,month,quarter,year
+#################################################################################
+UserGetChartCompareByTypeRoom (compare the defined types of room (if any))
+	Options:
+	
+	period		= now,day,week,month,quarter,year
+#################################################################################
+UserFindDeviceByType 	(find devices)
+	Options
+	type		= producttype (no clue what the other options are)
+	id 			= int (e.g. 150)
+#################################################################################
+UserGetChartEnergy		(summary on energy)
+	Options:
+	
+	No Options
+#################################################################################
+UserGetSmartMeterList (get info on the Smart Meters)
+	Options:
+	
+	No Options
+#################################################################################
+UserGetHouseConfig		(config of your house)
+	Options:
+	
+	No Options
+#################################################################################
+UserEnergyGet			(prices on your energy)
+	Options:
+	
+	datatype	= "el" or "gas"
+	what		= price (no clue on other values)
+#################################################################################
+AccountEdit				(edit your account / personal details (warning: check input!))
+	Options:
+	
+	firstname		=	First name
+	lastname		=	Last name
+	email			=	Email address
+	telfix			=	POTS
+	telmob			=	Mobile
+	addresstype		=	0,1
+	address1		=	Street + number
+	city			=	City
+	zip				=	Zip code
+	country			=	Country (2 letter, ISO)
+	password		= 	md5 hash of your password (only specify if you want to change it)
+#################################################################################

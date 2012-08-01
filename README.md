@@ -1,4 +1,4 @@
-GreenWave-Reality-API
+GreenWave Reality API
 =====================
 
 An PHP script to connect to the GreenWave Reality service and get data from your Smart energy meters. It can be used with for instance the Nuon E-manager. 
@@ -9,7 +9,7 @@ Include the gwrClasses.php file in your PHP script.
 
 USAGE
 
-See gwrExamples.php for examples. 
+See gwrExamples.php for examples. Also see gwrGChartExample.php for an example on how to plot a graph based on your data.
 
 METHODS
 

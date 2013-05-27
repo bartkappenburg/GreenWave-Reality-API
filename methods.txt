@@ -1,5 +1,8 @@
 This file specifies which methods you can use to extract data from your smart meter.
 The options have to be defined as an array with a key (option name) and value (option value).
+The last section in this document lists methods to change data (for instance set thermostat)
+
+[Get Data Methods]
 
 #################################################################################
 GatewayGetInfo 			(info on your gateway)
@@ -124,4 +127,16 @@ AccountEdit				(edit your account / personal details (warning: check input!))
 	zip				=	Zip code
 	country			=	Country (2 letter, ISO)
 	password		= 	md5 hash of your password (only specify if you want to change it)
+#################################################################################
+
+[Set Data Methods]
+
+#################################################################################
+UserThermostatSetData
+	Options:
+	
+	system			=	"heating"
+	fan			=	"none" (no clue what it does)
+	tempsetheat		= 	Thermostat controlled temperature
+	tempsetcold		= 	"25" (no clue what it does)
 #################################################################################
